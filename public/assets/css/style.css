@@ -1,0 +1,73 @@
+.jumbotron {
+	background-color: #f64d1870;
+	background-image: url("/assets/images/newspaper.jpg");
+	background-blend-mode: multiply;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	box-shadow: 0.25rem 0.25rem 1rem 0.25rem #4e4e4e;
+}
+
+.navbar {
+}
+
+.tx-cl-reddit {
+	color: #f64d18;
+}
+
+.bg-cl-reddit {
+	background-color: #f64d18;
+}
+
+.bd-cl-reddit {
+	border-color: #f64d18;
+}
+
+.btn-reddit {
+	color: #fff;
+	background-color: #f64d18;
+	border-color: #f64d18;
+}
+
+.btn-reddit:hover {
+	background-color: #dd3a08;
+	border-color: #d43708;
+}
+
+.btn-reddit, .btn-save, .btn-details, .btn-delete {
+	box-shadow: 0.25rem 0.25rem 1rem 1px #151515;
+}
+
+.article {
+	width: 100%;
+	margin: 2rem;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-image: url("/assets/images/paper.jpg");
+}
+
+/* Fix for footer not working */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 52px; /* Vertically center the text there */
+  border-top: .5rem solid #f64d18;
+	box-shadow: -0.25rem 0 1rem 0.25rem #4e4e4e;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
