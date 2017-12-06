@@ -43,6 +43,17 @@
 	margin: 2rem;
 }
 
+.buttons {
+	vertical-align: middle;
+	padding: 1rem;
+	min-height: 56px;
+	text-align: right;
+}
+
+.btn {
+	margin: 2px 0;
+}
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
