@@ -5,5 +5,7 @@
       <p class="lead">Your Saved Articles</p>
     </div>
   </div>
-  {{> article this}}
+  <div id="articles">
+    {{#each articles}} {{> article saved='true'}} {{/each}}
+  </div>
 </div>
