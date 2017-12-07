@@ -1,13 +1,17 @@
 <div class="row">
 	<article class="article col-xs-12">
-		<div class="top bg-primary row">
+		<div class="top row">
 			<div class="col-md-8">
-				<a id="articleLink" class="articleLink nav-link text-light" href="#" target="blank_"><h1 id="articleTitle">Test String for Article Styling</h1></a>
+				<a id="articleLink" class="articleLink nav-link text-light" href="#" target="blank_"><h1 id="articleTitle">Super Long Test String for Article Styling That Should Show Up on Two Lines at Least</h1></a>
 			</div>
 			<div class="col-md-4 buttons">
-				<button class="btn btn-save">Save Article</button>
-				<button class="btn btn-details">Article Details</button>
-				<button class="btn btn-delete">Delete Article</button>
+				{{#if home}}
+					<button class="btn btn-save">Save Article</button>
+				{{/if}}
+				{{#if saved}}
+					<button class="btn btn-details">Article Details</button>
+					<button class="btn btn-delete">Delete Article</button>
+				{{/if}}
 			</div>
 		</div>
 		<div class="row">
