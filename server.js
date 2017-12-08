@@ -22,8 +22,13 @@ app.set("view engine", "handlebars");
 
 // Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to the Mongo DB
+var uristring =
+    process.env.MONGOLAB_URI ||
+    process.env.MONGOHQ_URL ||
+    'mongodb://localhost/HelloMongoose';
+
 mongoose.Promise = Promise;
-mongoose.connect("mongodb://localhost/scrapper", {
+mongoose.connect(uristring, {
   useMongoClient: true
 });
 
