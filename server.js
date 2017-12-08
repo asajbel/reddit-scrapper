@@ -23,14 +23,16 @@ app.set("view engine", "handlebars");
 // Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to the Mongo DB
 var uristring =
-    process.env.MONGOLAB_URI ||
-    process.env.MONGOHQ_URL ||
+    process.env.MONGODB_URI ||
     'mongodb://localhost/HelloMongoose';
 
-mongoose.Promise = Promise;
-mongoose.connect(uristring, {
-  useMongoClient: true
-});
+mongoose.connect(uristring, function (err, res) {
+      if (err) {
+      console.log ('ERROR connecting to: ' + uristring + '. ' + err);
+      } else {
+      console.log ('Succeeded connected to: ' + uristring);
+      }
+    });
 
 require("./routes")(app);
 
