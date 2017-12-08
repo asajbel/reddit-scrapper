@@ -16,6 +16,7 @@ module.exports = function(app) {
 	    var page = [];
 	    var articles = [];
 	    var count = $('div#siteTable > div.link').length;
+	    var site = $('div#siteTable > div.link');
 	    $('div#siteTable > div.link').each(function( index ) {
 	    	var article = {};
 		    article.title = $(this).find('p.title > a.title').text().trim();

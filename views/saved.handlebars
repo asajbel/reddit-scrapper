@@ -6,6 +6,10 @@
     </div>
   </div>
   <div id="articles">
-    {{#each articles}} {{> article saved='true'}} {{/each}}
+    {{#each articles}} 
+    		{{> saved}} 
+    {{/each}}
   </div>
 </div>
+
+<script type="text/javascript" src="./assets/js/saved.js"></script>

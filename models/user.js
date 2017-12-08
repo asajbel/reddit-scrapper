@@ -9,11 +9,13 @@ var UserSchema = new Schema({
 	name: {
 		type: String,
 		required: true,
+		unique: true
 	},
 	articles: [
 		{
 			type: Schema.Types.ObjectId,
-      ref: "Article"
+      ref: "Article",
+      unique: true
 		}
 	]
 });

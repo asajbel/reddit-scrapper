@@ -7,8 +7,15 @@ $(function() {
 		});
 	});
 
-	$("#infoModalClose").on("click", function(event) {
+	$(".btn-save").on("click", function(event) {
 		event.preventDefault();
-		location.reload();
+		$.ajax({
+			url: "/api/save/" + $(this).attr("data-id"),
+			method: "PUT",
+			success: function(response) {
+			console.log(response);
+				$("#infoModalText").text("Saved article");
+				$("#infoModal").modal();
+		}});
 	});
 });
