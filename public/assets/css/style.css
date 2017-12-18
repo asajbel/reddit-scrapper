@@ -1,0 +1,161 @@
+.jumbotron {
+	background-color: #9e3312;
+	background-image: url("/assets/images/newspaper.jpg");
+	background-blend-mode: multiply;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	box-shadow: 0.25rem 0.25rem 1rem 0.25rem #4e4e4e;
+	color: #f8f9fa;
+}
+
+.lead, .display-3 {
+	font-weight: 600;
+}
+
+.tx-cl-reddit {
+	color: #f64d18;
+}
+
+.bg-cl-reddit {
+	background-color: #f64d18;
+}
+
+.bd-cl-reddit {
+	border-color: #f64d18;
+}
+
+.btn-reddit {
+	background-color: #f64d18;
+	border-color: #f64d18;
+}
+
+.btn-reddit:hover {
+	background-color: #dd3a08;
+	border-color: #d43708;
+}
+
+.btn-reddit, .btn-save, .btn-details, .btn-delete {
+	box-shadow: 0.25rem 0.25rem 1rem 1px #151515;
+	margin: 2px 0;
+	color: #fff;
+}
+
+.btn-reddit:focus, .btn-save:focus, .btn-details:focus, .btn-delete:focus {
+	box-shadow: 0.25rem 0.25rem 1rem 1px #151515;
+}
+
+.btn-reddit:active, .btn-save:active, .btn-details:active, .btn-delete:active {
+	box-shadow: none;
+}
+
+.btn-save {
+	background-color: #40ce60;
+}
+
+.btn-details {
+	background-color: #d02ad0;
+}
+
+.btn-delete {
+	background-color: #f12424;
+}
+
+.buttons {
+	display: block;
+	padding: 1rem;
+	min-height: 56px;
+	text-align: right;
+	line-height: inherit;
+}
+
+.article {
+	width: 100%;
+	margin: 2rem;
+}
+
+.top {
+	background-color: #4e759d;
+	border-width: 0.5rem 2rem 0 2rem;
+	border-style: solid;
+	border-color: #4e759d;
+	border-radius: 2rem 2rem 0 0;
+	box-shadow: 0.25rem 0.25rem 1rem 0.25rem #4e4e4e;
+}
+
+.bottom {
+	width: 100%;
+	min-height: 24px;
+	padding: 1rem;
+	background-color: #f8f9fa;
+	border: 0 2rem 2rem 2rem solid #f8f9fa;
+	border-width: 0 2rem 0.5rem 2rem;
+	border-style: solid;
+	border-color: #f8f9fa;
+	border-radius: 0 0 2rem 2rem;
+	box-shadow: 0.25rem 0.25rem 1rem 0.25rem #4e4e4e;
+}
+
+.bot-link {
+	padding: 2px 2px;
+	color: grey;
+	text-decoration: none;
+	color: #979a9a;
+}
+
+.bot-link:hover {
+	text-decoration: none;
+	color: #c7cecd;
+}
+
+.bot-link:focus {
+	text-decoration: none;
+}
+
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 70px;
+	z-index: 200;
+}
+
+.navbar{ 
+	min-height: 100%;
+}
+
+.navbar-toggler {
+	margin-right: 2rem;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-top: 70px;
+  margin-bottom: 60px;
+  background-image: url("/assets/images/paper.jpg");
+  min-width: 340px;
+}
+
+/* Fix for footer not working */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 52px; /* Vertically center the text there */
+  border-top: .5rem solid #f64d18;
+	box-shadow: -0.25rem 0 1rem 0.25rem #4e4e4e;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}

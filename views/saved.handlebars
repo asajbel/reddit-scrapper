@@ -1,0 +1,41 @@
+<div id="commentModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 id="commentModalTitle" class="modal-title">Comments</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="comments">
+          </div>
+          <form id="newComment">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Enter New Comment</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button id="infoModalClose" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container-fluid">
+  <div class="jumbotron jumbotron-fluid text-light">
+    <div class="container">
+      <h1 class="display-3">Saved Articles</h1>
+      <p class="lead">Your Saved Articles</p>
+    </div>
+  </div>
+  <div id="articles">
+    {{#each articles}} 
+    		{{> saved}} 
+    {{/each}}
+  </div>
+</div>
+
+<script type="text/javascript" src="./assets/js/saved.js"></script>
